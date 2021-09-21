@@ -30,10 +30,10 @@ p{
     color: #fff;
 }
 .banner .content p{
-    font-size: 1em;
-    color: #AEB6BF ;
+    color: whitesmoke;
+    font-size: 20px;
 }
-.btn{
+.btn-info{
     font-size: 1em;
     color: #fff;
     background: #45B39D;
@@ -45,11 +45,11 @@ p{
     letter-spacing: 2px;
     transition: 0.5s;
 }
-.btn:hover{
+.btn-info:hover{
     letter-spacing: 6px;
 }
 .about{
-    background: #F2F4F4;
+   background: #b7bec399;
 }
 
 header{
@@ -68,6 +68,9 @@ header.sticky{
     background: #fff;
     padding: 10px 100px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header a:hover{
+    color: #030e0f !important;
 }
 header .logo{
     color: #fff;
@@ -103,44 +106,15 @@ header .navigation li a:hover{
 section{
     padding: 100px;
 }
-.row{
-    padding: 100px;
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-.row .col50{
-    position: relative;
-    width: 48%;
-}
 .tituloTexto{
     color: #111;
     font-size: 2em;
     font-weight: 300;
 }
 .tituloTexto span{
-    color: #E53935;
+    color: #c5106c;
     font-weight: 700;
     font-size: 1.5em;
-}
-.row .col50 .imgBx{
-    position: relative;
-    width: 100%;
-    /*min-height: 300px;*/
-    height: 100%;
-}
-.row .col50 .imgBx img{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 300px;
-    height: 100%;
-    /*object-fit: cover;*/
-    border: 5px solid #141D25;
-    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 
-             0 0  0 2px rgb(255,255,255),
-             0.3em 0.3em 1em rgba(0,0,0,0.3);
 }
 .titulo{
     width: 100%;
@@ -152,82 +126,15 @@ section{
 .menu {
 background: #FFF;
 }
-
-.menu .content{
-    display: flex;
-    justify-content: center;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    
+.div-center{
+    margin-left: auto;
+    margin-right: auto;
 }
-.menu .content .box{
-    width: 340px;
-    margin: 20px;
-    border: 15px solid #fff;
-    box-shadow: 0 5px 35px rgba(0,0,0,0.09);
-}
-.menu .content .box .imgBx{
-    position: relative;
-    width: 100%;
-    height: 300px;
-}
-.menu .content .box .imgBx img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.menu .content .box .text{
-    padding: 15px 0 5px;
-}
-.menu .content .box .text h3{
-    font-weight: 400;
-    color: #111;
+.txt-center{
     text-align: center;
 }
-.chef{
-    background: #F5F7D8;
-}
-.chef .content{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: 50px;
-}    
-.chef .content .box{
-    width: 250px;
-    margin: 15px;
-}
-.chef .content .box .imgBx{
-    position: relative;
-    width: 100%;
-    height: 300px;
-}
-.chef .content .box .imgBx img{
-     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10%;
-    border: 5px solid #376887;
-}
-.chef .content .box .text{
-    text-align: center;
-    padding: 15px 0 5px;
-}
-.chef .content .box .text h3{
-    font-weight: 400;
-    color: #111;
-}
-.chef .content .box .text a{
-    text-decoration: none;
+.imgBx img{
+    width: 50%;
 }
 .testimonios{
     background: #1C3347;
@@ -434,19 +341,7 @@ background: #FFF;
         font-size: 3em;
         color: #fff;
 }
-    .row{
-        flex-direction: column;
-        padding-left: 150px;
-}
-    .row .col50{
-        position: relative;
-        width: 100%;
-    }
-    .row .col50 .imgBx {
-    height: 200px;
-    margin-top: 25px;
-}
-    .menu .content {
+     .menu .content {
     margin-top: 20px;
 }
     .menu .content .box{
@@ -480,4 +375,8 @@ background: #FFF;
     font-size: 2.5em;
     color: #fff;
 }
+}
+.div-info{
+    text-align: left;
+    width: 85% !important;
 }
