@@ -319,14 +319,14 @@ background: #FFF;
     position: relative;
     width: 40px;
     height: 40px;
-    background: url(../icono/bot%C3%B3n-menu.png);
+    background: url(https://cdn-icons-png.flaticon.com/512/5602/5602349.png);
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
 }
 .menuAlternar.activo{
-    background: url(../icono/bot%C3%B3n-cerrar-menu.png);
+    background: url(https://cdn-icons-png.flaticon.com/512/656/656958.png);
     background-size: 25px;
     background-repeat: no-repeat;
     background-position: center;
