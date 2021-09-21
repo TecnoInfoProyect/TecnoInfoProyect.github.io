@@ -3,323 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto T.I</title>
-    <link rel="shortcut icon" href="icono/Logo.ico" />
+    <title>NejBit</title>
+    <link rel="shortcut icon" href="images/icono/logo.ico"/>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
 <body>
 
 <header>
-    <a href="#" class="logo">Proyecto T.I<span></span></a>
+    <a href="#" class="logo">NejBit<span></span></a>
     <div class="menuAlternar" onclick="alternarMenu();"></div>
        <ul class="navigation">
         <li><a href="#banner" onclick="alternarMenu();">Home</a></li>
-        <li><a href="#about" onclick="alternarMenu();">Sobre Nosotros</a></li>
-        <li><a href="#menu" onclick="alternarMenu();">Componentes</a></li>
-        <li><a href="#chef" onclick="alternarMenu();">Integrantes</a></li>
+        <li><a href="#about" onclick="alternarMenu();">Sobre Nosotros</a></li><!--
+        <li><a href="#componentes" onclick="alternarMenu();">Componentes</a></li>
+        <li><a href="#integrantes" onclick="alternarMenu();">Integrantes</a></li>-->
     </ul>
 </header>
 <section class="banner" id="banner">
     <div class="content">
-        <h2>El sabor marino</h2>
-        <p>Para sastifacer tu paladar.</p>
-        <a href="#menu" class="btn">Nuestro Menu</a>
+        <h2>NejBit</h2>
+        <p>Sistema de Alarma para tu hogar.</p>
+        <a href="#menu" class="btn-info">Infórmate aquí</a>
     </div>
 </section>
 
-<section class="about" id="about">
-    <div class="row">
-        <div class="col50">
-            <h2 class="tituloTexto"><span>S</span>obre <span>N</span>osotros</h2>
-            <p>Somos una empresa que busca la entrega <br> y venta segura de alimentos a domicilio</p><br>Comida hecho en base a los conocimientos <br>adquiridos por nuestros chef's
-        </div>
-        <div class="col50">
-            <div class="imgBx">
-                <img src="imagenes/logo-caba%C3%B1a-marina.png">
-            </div>
-        </div>
-    </div>
-</section>
+
    <!--asdfadfadsfadsft asasdfdasdf-->
 <section class="menu" id="menu">
-    <div class="titulo">
-       <h2 class="tituloTexto"><span>N</span>uestro <span>M</span>enu</h2>
-       <p>Menús hechos con la mayor calidad del Perú.</p>
-    </div>
-    <div class="content">
-        <div class="box">
-          <a style="text-decoration: none" href="Catalogo.html">
-           <div class="imgBx">
-               <img src="imagenes/ensalada.jpg">
-           </div> 
-           <div class="text">
-               <h3>Ensaladas Especiales</h3>
-           </div>
-           </a>
-        </div>
-          <div class="box">
-           <div class="imgBx">
-               <img src="imagenes/portada2.png">
-           </div> 
-           <div class="text">
-               <h3>Menú Especial</h3>
-           </div>
-        </div>
-        <div class="box">
-           <div class="imgBx">
-               <img src="imagenes/ceviche.png">
-           </div> 
-           <div class="text">
-               <h3>Entradas</h3>
-           </div>
-        </div>
-        <div class="box">
-           <div class="imgBx">
-               <img src="imagenes/piqueos2.jpg">
-           </div> 
-           <div class="text">
-               <h3>Piqueos</h3>
-           </div>
-        </div>
-        <div class="box">
-           <div class="imgBx">
-               <img src="imagenes/postres.png">
-           </div> 
-           <div class="text">
-               <h3>Postres</h3>
-           </div>
-        </div>
-        <div class="box">
-           <div class="imgBx">
-               <img src="imagenes/bebidas.png">
-           </div> 
-           <div class="text">
-               <h3>Bebidas</h3>
-           </div>
+    <div class="titulo container">
+      <h2 class="tituloTexto">¿Como funciona?</h2> <br>
+       <div class="col-md-12 div-info">
+       <p>El sistema tendria dos sensores integrados, uno en la entrada el domicilio o establecimiento y la otra hacia el exterior. <br> (Llamemoslos sensor A y B respectivamente), ambas conectadas a un parlante.</p>
+       <p>El sensor A al igual que el B pueden ser activados y desactivados por el usuario desde un pulsador guardado en una caja con llave o desde su dispositivo mobil vinculado mediante el aplicativo de la alarma.</p>
+       <p>El sensor A, al estar encendido, se activaria cuando alguien cruce por la entrada en el cual fue colocado y activaria los parlantes sonando una alarma y el usuario veria mediante su dispositivo mobil la alerta "se a detectado un intruso" y tendria la opción de llamar a las autoridades mediante el aplicativo, tambien podria apagar la alarma una vez activada desde su APP o mediante el pulsador previamente mencionado.</p>
+       <p>El sensor B tendria una vista al exterior detectando a las entidades que pasen delante de el, este sensor no activaria los parlantes, sino que toda la informacion recopilada seria almacenada en el aplicativo y en la web de la alarma.</p>
+       <br>
+       <h4>Preguntas :</h4>
+       <p>-¿Porque el pulsador si ya se puede activar/desactivar la alarma desde la app? </p>
+       <p>En caso que el usuario no tenga acceso a internet, haya extraviado su dispositivo o no lo tenga cerca durante la activación de la alarma, podra desactivar la alarma mediante el pulsador el cual estara en una caja segura con apertura mediante una llave.</p>
+       
+       <p>-¿Porque una llave y no un sistema de pin o numerico como las cajas fuertes?</p>
+       <p>Puesto que en caso de cualquier falla electrica o de seguridad, siempre es bueno utilizar metodos tradicionales como las llaves.</p>
+       
+       <p>-¿Cual es la utilidad del sensor B si ya existe el sensor A?</p>
+       <p>Su utilidad es controlar los ingresos y completentar al sensor A mediante informacion  mas precisa acerca de los horarios.</p>
+       <p>-¿Como funciona la informacion brindada por el sensor B en la web?</p>
+       <p>La informacion de las entidades detectadas seria registrado con su hora de deteccion y duración de esta. <br>Ejemplo: <br> "7:10:52 am, entidad detectada, 43 segundos". <br> Esto serviria de informe que puede ser tambien complementado con un sistema de camaras de seguridad.</p>
         </div>
     </div>
     
-    <div class="titulo">
-        <a href="catalogo/index.html" class="btn">Ver Todo</a>
-    </div>
 </section>
-   <section class="chef" id="chef">
+  
+  
+   <!--<section class="componentes" id="componentes">
        <div class="titulo">
            <h2 class="tituloTexto"><span>N</span>uestros <span>C</span>hef's <span>E</span>xpertos</h2>
        <p>Egresados de la Universidad San Martin de Porres, con Maestría en Hogwarts y Reconocidos por El programa Master Chef</p>
     </div>
-    <div class="content">
-        <div class="box">
-           <a href="https://instagram.com/julio.vera.9862?igshid=gpuhlif4lagi" target="_blank">
-            <div class="imgBx">
-                <img src="imagenes/chef1.jpeg">               
-            </div>       
-            </a>
-            <div class="text">
-               <a href="https://instagram.com/julio.vera.9862?igshid=gpuhlif4lagi" target="_blank">
-                <h3>Julio Vera</h3>
-                </a>
-                <p>Egresado de la USMP</p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="imgBx">
-               <a href="https://instagram.com/s_10_vic?igshid=1kyw4zt46mqm4" target="_blank">
-                <img src="imagenes/chef2.jpeg">
-                </a>
-            </div>
-            <div class="text">
-               <a href="https://instagram.com/s_10_vic?igshid=1kyw4zt46mqm4" target="_blank">
-                <h3>Sebastian Vicente</h3>
-                </a>
-                <p>Egresado de la USMP</p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="imgBx">
-               <a href="https://instagram.com/franchescox30?igshid=4izf0iif5fyf" target="_blank">
-                <img src="imagenes/chef3.jpeg">
-                </a>
-            </div>
-            <div class="text">
-               <a href="https://instagram.com/franchescox30?igshid=4izf0iif5fyf" target="_blank">
-                <h3>Franchesco Saravia</h3>
-                </a>
-                <p>Egresado de la USMP</p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="imgBx">
-               <a href="https://instagram.com/diegovega02?igshid=w3xbufgxrl9z" target="_blank">
-                <img src="imagenes/chef4v2.jpeg">
-                </a>
-            </div>
-            <div class="text">
-               <a href="https://instagram.com/diegovega02?igshid=w3xbufgxrl9z" target="_blank">
-                <h3>Diego Vega</h3>
-                </a>
-                <p>Egresado de la USMP</p>
-            </div>
-        </div>
-        <a style="text-decoration: none; color: red;" href="Catalogo-Triptico.html">Triptico de comida - Elaborado por los chefs </a>
-    </div>
-   </section>
+   </section>-->
+   
+   <!--
    <section class="testimonios" id="testimonios">
        <div class="titulo blanco">
            <h2 class="tituloTexto"><span>T</span>estimonios de las <span>P</span>ersonas</h2>
        <p>Aquí encontrarás algunos testimonios de nuestros clientes 
        que tuvieron la oportunidad de disfrutar de nuestro grandioso restaurante<p>
        </div>
-          <div class="content">
-             <div class="box">
-                <div class="imgBx">
-                    <img src="imagenes/testimonio1.jpg">
-                </div>
-                <div class="texto">
-                    <p>Estoy agrecido con la cabaña marina por la rapidez de entrega y calidad de producto, se nota que todo es de primera mano. Les deseo mis mejores vibras para esta pequeña empresa y puedan llegar aún mas lejos.</p>
-                    <h3>Nadie</h3> <br>
-                   <p class="txt-comentarios">Comentarios:</p> <br>
-                    <div class="box-comentario">
-                    <img class=" box-coments"  src="imagenes/comentario-perfil1.jpg">
-                    <p class="txt-comentario-dentro">Estoy de acuerdo con Nadie, ya que la rapidez de entrega y calidad de producto son impresionates.</p>
-                    <p class="nombre-comentario-testimonio">María Orbegozo</p>
-                    <hr>
-                    <p style="color: black;">Añade un comentario</p>
-                    <form>
-                        <input type="texto" placeholder="Nombres">
-                         <input type="texto" placeholder="Mensaje"><br>
-                          <input type="submit" value="Subir"
-                    </form>
-                    
-                    </div>
-                    
-                </div>
-                 
-             </div>
-             <div class="box">
-                <div class="imgBx">
-                    <img src="imagenes/testimonio2.png">
-                </div>
-                <div class="texto">
-                    <p>Estoy agradecido con la Cabaña Marina y su servicio a domicilio en el horario a tiempo, el cual habia pedido por lo que recomendaria este restaurante a cualquiera de mis conocidos y a ete sech</p>
-                    <h3>El Pepe</h3> <br>
-                    <p class="txt-comentarios">Comentarios:</p> <br>
-                    <div class="box-comentario">
-                    <img class=" box-coments"  src="imagenes/comentario-perfil2.jpg">
-                    <p class="txt-comentario-dentro">Estoy de acuerdo con El Pepe, ya que también hice mi pedido y me llegó super rápido.</p>
-                    <p class="nombre-comentario-testimonio">Jose María Zevallos</p>
-                    <hr>
-                    <p style="color: black;">Añade un comentario</p>
-                    <form>
-                        <input type="texto" placeholder="Nombres">
-                         <input type="texto" placeholder="Mensaje"><br>
-                          <input type="submit" value="Subir"
-                    </form>
-                    
-                    </div>
-                </div>
-                 
-             </div>
-             <div class="box">
-                <div class="imgBx">
-                    <img src="imagenes/testimonio3.png">
-                </div>
-                <div class="texto">
-                    <p>Estoy agrecido con la cabaña marina por su método de rapidez y calidad con el cual me llegó mi producto 10/10 y re-confirmo lo que dijo mi compa el pepe</p>
-                    <h3>Ete-Sech</h3> <br>
-                    <p class="txt-comentarios">Comentarios:</p> <br>
-                    <div class="box-comentario">
-                    <img class=" box-coments"  src="imagenes/joker-comentario.png">
-                    <p class="txt-comentario-dentro">Estoy de acuerdo con El Sech, adémas de que su calidad es excelante, su servicio de entrega es excelente en este tiempo de cuarentena.</p>
-                    <p class="nombre-comentario-testimonio">El bromas</p>
-                    <hr>
-                    <p style="color: black;">Añade un comentario</p>
-                    <form>
-                        <input type="texto" placeholder="Nombres">
-                         <input type="texto" placeholder="Mensaje"><br>
-                          <input type="submit" value="Subir"
-                    </form>
-                    
-                    </div>
-                </div>
-                 
-             </div>
-             <div class="box">
-                <div class="imgBx">
-                    <img src="imagenes/messi.jpg">
-                </div>
-                <div class="texto">
-                    <p>Estoy muy contento con el Restaurante "La Cabaña Marina", Me encanta sus comidas grandes y bien deliciosas a un menor precio. Se los recomiendo<br>
-                    <p></p>
-                    <h3>Messi-Chiquito</h3> <br>
-                    <p class="txt-comentarios">Comentarios:</p> <br>
-                    <div class="box-comentario">
-                    <img class=" box-coments"  src="imagenes/cristiano.jpg">
-                    <p class="txt-comentario-dentro">Estoy de acuerdo con la opinión de messi-chiquito, ya que también hice mi pedido, y además me llegó bien taipá.</p>
-                    <p class="nombre-comentario-testimonio">Cristiano-chiquito</p>
-                    <hr>
-                    <p style="color: black;">Añade un comentario</p>
-                    <form>
-                        <input type="texto" placeholder="Nombres">
-                         <input type="texto" placeholder="Mensaje"><br>
-                          <input type="submit" value="Subir"
-                    </form>
-                    
-                    </div>
-                </div>
-             </div>
-             
-             <div class="formaContacto box">
-             <div class="box-foto" style="margin-top: 0px;"><br>
-             <p style="text-align: center; text-decoration: underline;">Agregar Testimonio</p><br>
-             <p style="color: black;">Foto</p>
-              <form name="subida-imagenes" type="POST" enctype="multipart/formdata" >
-	           <input type="file" name="imagen1" />
-                </div>
-                
-               <div class="box-relleno" style="margin: 50px;">
-               <p></p>
-           <div class="cajaTexto">
-               <input type="texto" placeholder="Nombres">
-           </div>
-           <div class="cajaTexto">
-               <input type="texto" placeholder="Mensaje">
-           </div>
-           <div class="cajaTexto">
-              
-              <input type="submit" value="Subir" style="margin-left: 30px;">
-              </form>
-           </div>
-       </div>
-          </div>
-          </div>
-           </section>
+                           
+   </section>-->
            
-    <section class="contacto" id="contacto">
-       <div class="titulo">
-           <h2 class="tituloTexto"><span>C</span>ontáctanos</h2>
-       <p>Déjanos tus consultas o dudas, no tardaremos en responderte o puedes ubicarnos aquí.<p>
-       </div>
-       <div class="formaContacto">
-           <h3>Enviar Mensaje</h3>
-           <div class="cajaTexto">
-               <input type="texto" placeholder="Nombres">
-           </div>
-           <div class="cajaTexto">
-               <input type="texto" placeholder="Email">
-           </div>
-           <div class="cajaTexto">
-               <textarea placeholder="Ingrese mensaje"></textarea>
-           </div>
-           <div class="cajaTexto">
-               <input type="submit" value="Enviar">
-           </div>   
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.5657833139794!2d-76.95676858561754!3d-12.07336874568215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c6fb1e021d9f%3A0x68e8310fe0b28a7c!2sAv.%20la%20Fontana%20777%2C%20Cercado%20de%20Lima%2015024!5e0!3m2!1ses-419!2spe!4v1608955578569!5m2!1ses-419!2spe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>   
-       </div>
-       
-    </section>
+    <section id="about">
+    <div class="titulo container">
+    <div class="row div-center">
+        <div class="col-md-6">
+            <h2 class="tituloTexto"><span>M</span>isión y <span>V</span>isión</h2>
+            <p><bold>Misión: </bold>Desarrollar nuestro proyecto en equipo, investigando e innovando procesamientos de señales analógicas a digital con sensores, haciendo uso del arduino entre otros.</p>
+            <p><bold>Visión: </bold>Contribuir y aportar hacia la sociedad con este proyecto de innovación y también con capacidades de generar tecnologías y asi poder solucionar problemas que se puedan presentar en nuestra actividad diaria. </p>
+        </div>
+        <div class="col-md-6 txt-center">
+            <div class="imgBx">
+                <img src="images/NejBit.png">
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
     <div class="derechosTexto">
-        <p>Copyright 2020 <a href="#">Cabaña Marina.</a> Cualquier plagio será penado con pena de muerte &#128545; </p>
+        <p>Copyright 2021 <a href="#">NejBit.</a> <!--Cualquier plagio será penado con pena de muerte &#128545;--> </p>
     </div>
     
     
