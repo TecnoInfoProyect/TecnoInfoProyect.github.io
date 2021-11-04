@@ -16,14 +16,15 @@
        <ul class="navigation">
         <li><a href="#banner" onclick="alternarMenu();">Home</a></li>
         <li><a href="#about" onclick="alternarMenu();">Sobre Nosotros</a></li>
-       <!-- <li><a href="#componentes" onclick="alternarMenu();">Componentes</a></li>-->
+        <li><a href="#componentes" onclick="alternarMenu();">Componentes</a></li>
+        <li><a href="#proyecto" onclick="alternarMenu();">Proyecto</a></li>
         <li><a href="#integrantes" onclick="alternarMenu();">Integrantes</a></li>
     </ul>
 </header>
 <section class="banner" id="banner">
     <div class="content">
         <h2>NejBit</h2>
-        <p>Sistema de Alarma para tu hogar.</p>
+        <p>Sistema de Sensor.</p>
         <a href="#menu" class="btn-info">Infórmate aquí</a>
     </div>
 </section>
@@ -34,10 +35,7 @@
     <div class="titulo container">
       <h2 class="tituloTexto">¿Como funciona?</h2> <br>
        <div class="col-md-12 div-info">
-       <p>El sistema tendria dos sensores integrados, uno en la entrada el domicilio o establecimiento y la otra hacia el exterior. <br> (Llamemoslos sensor A y B respectivamente), ambas conectadas a un parlante.</p>
-       <p>El sensor A al igual que el B pueden ser activados y desactivados por el usuario desde un pulsador guardado en una caja con llave o desde su dispositivo mobil vinculado mediante el aplicativo de la alarma.</p>
-       <p>El sensor A, al estar encendido, se activaria cuando alguien cruce por la entrada en el cual fue colocado y activaria los parlantes sonando una alarma y el usuario veria mediante su dispositivo mobil la alerta "se a detectado un intruso" y tendria la opción de llamar a las autoridades mediante el aplicativo, tambien podria apagar la alarma una vez activada desde su APP o mediante el pulsador previamente mencionado.</p>
-       <p>El sensor B tendria una vista al exterior detectando a las entidades que pasen delante de el, este sensor no activaria los parlantes, sino que toda la informacion recopilada seria almacenada en el aplicativo y en la web de la alarma.</p>
+       <p>El sensor PIR detecta cuando una persona ingresa por una puerta hacia un mercado, centro comercial etc. y asi va contando cuantas personas ingreso y asi podemos controlar de cuantas personas hay y se puede poner tambien un limite para evitar la aglomeración </p>
        <br>
        <h4>Preguntas :</h4>
        <p>-¿Porque el pulsador si ya se puede activar/desactivar la alarma desde la app? </p>
@@ -56,22 +54,133 @@
 </section>
   
   
-   <!--<section class="componentes" id="componentes">
-       <div class="titulo">
-           <h2 class="tituloTexto"><span>N</span>uestros <span>C</span>hef's <span>E</span>xpertos</h2>
-       <p>Egresados de la Universidad San Martin de Porres, con Maestría en Hogwarts y Reconocidos por El programa Master Chef</p>
-    </div>
-   </section>-->
+   <section class="componentes" id="componentes">
+       <div class="titulo mb-3">
+           <h2 class="tituloTexto"><span>C</span>omponentes</h2>
+      </div>
+      <div class="container">
+      <div class="row">
+          <div class="col-md-6 m-6"><hr>
+              <h5 class="txt-center mt-3 mb-3">Arduino Uno</h5> <hr>
+               <div class="row">
+              <div class="align-self-center col-md-6">
+                 <p>Placa basada en un microcontrolador ATMEL.</p>  
+              </div>
+              <div class="col-md-6">
+                 <div class="img">
+                     <img class="img-size" src="images/arduino.jpg" alt="">
+                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="border-morado col-md-6"><hr>
+              <h5 class="txt-center mt-3 mb-3">Buzzer</h5> <hr>
+              <div class="row">
+              <div class="align-self-center col-md-6">
+                 <p>Transductor electroacústico, sirve como mecanismo de señalización o aviso</p>  
+              </div>
+              <div class="col-md-6">
+                 <div class="img">
+                     <img class="img-size img-buzzer" src="images/buzzer-zumbador.jpg" alt="">
+                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="border-morado col-md-6"><hr>
+              <h5 class="txt-center mt-3 mb-3">Sensor PIR</h5> <hr>
+              <div class="row">
+              <div class="align-self-center col-md-6">
+                 <p>Sensor electrónico que mide la luz infrarroja (IR) radiada de los objetos situados en su campo de visión</p>  
+              </div>
+              <div class="col-md-6">
+                 <div class="img">
+                     <img class="img-size img-buzzer" src="images/sensor-pir.jpg" alt="">
+                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="border-morado col-md-6"><hr>
+              <h5 class="txt-center mt-3 mb-3">Pantalla LCD</h5> <hr>
+               <div class="row">
+              <div class="align-self-center col-md-6">
+                 <p>Pantalla de cristal líquido que se utiliza para ver imágenes fijas y en movimiento.</p>  
+              </div>
+              <div class="col-md-6">
+                 <div class="img">
+                     <img class="img-size img-buzzer" src="images/lcd.jpg" alt="">
+                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="border-morado col-md-6"><hr>
+              <h5 class="txt-center mt-3 mb-3">Cables</h5> <hr>
+               <div class="row">
+              <div class="align-self-center col-md-6">
+                 <p>Son cables de diferentes colores y funcionan en base al lugar conectado (Pines).</p>  
+              </div>
+              <div class="col-md-6">
+                 <div class="img">
+                     <img class="img-size img-buzzer" src="images/cables.jpg" alt="">
+                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="border-morado col-md-6 "><hr>
+              <h5 class="txt-center mt-3 mb-3">Resistencia</h5> <hr>
+               <div class="row">
+              <div class="align-self-center col-md-6">
+                 <p>Se utilizan en los circuitos para variar los valores de intensidad y voltaje</p>  
+              </div>
+              <div class="col-md-6">
+                 <div class="img">
+                     <img class="img-size img-buzzer" src="images/Resistencia.jpg" alt="">
+                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="border-morado col-md-6"><hr>
+              <h5 class="txt-center mt-3 mb-3">Protoboard</h5> <hr>
+              <div class="row">
+              <div class="align-self-center col-md-6">
+                 <p>Tablero con orificios que se encuentran conectados eléctricamente entre sí de manera interna, se pueden insertar componentes electrónicos y cables para el prototipado de circuitos electrónicos o sistemas</p>  
+              </div>
+              <div class="col-md-6">
+                 <div class="img">
+                     <img class="img-size img-buzzer" src="images/protoboard.jpg" alt="">
+                 </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+   </section>
    
-   <!--
-   <section class="testimonios" id="testimonios">
-       <div class="titulo blanco">
-           <h2 class="tituloTexto"><span>T</span>estimonios de las <span>P</span>ersonas</h2>
-       <p>Aquí encontrarás algunos testimonios de nuestros clientes 
-       que tuvieron la oportunidad de disfrutar de nuestro grandioso restaurante<p>
+   
+   <section class="testimonios" id="proyecto">
+       <div class="blanco">
+           <h2 class="text-center tituloTexto mb-3"><span>P</span>royecto</h2>
+           <div class="row">
+               <div class="col-md-6 mb-3">
+                   <div class="div-size">
+                    <img class="img-size border-gray" src="images/codigo.png" alt="">
+                </div>
+               </div>
+               <div class="col-md-6">
+               <div class="col-md-12">
+                   <div class="img">
+                    <img class="img-size fix-img" src="images/trabajo-tinkercad.jpg" alt="">
+                     </div>
+               </div>
+               <div class="col-md-12">
+                   <div class="img">
+                    <img class="img-size fix-img" src="images/proyecto-2.jpg" alt="">
+                     </div>
+               </div>
+               </div>
+           </div>
        </div>
                            
-   </section>-->
+   </section>
            
     <section id="about" class="div-sec">
     <div class="titulo container">
@@ -89,7 +198,6 @@
     </div>
     </div>
 </section>
-   
    <section id="integrantes" class="div-sec2">
     <div class="titulo container">
     <div class="col-12">
@@ -120,5 +228,9 @@
     }
     
     </script>
+    
+    <script src="js/simplyCountdown.min.js"></script>
+    <script src="js/countdown.js"></script>
+    
 </body>
 </html>
