@@ -6,6 +6,23 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
+button{
+    width: 120px;
+    height: 50px;
+    background: gold;
+    color: black;
+    border-radius: 18px;
+    outline: none;
+    margin: 20px;
+}
+#counting{
+    padding: 12px;
+    font-size: 1.8rem;
+}
+#warning{
+    /*border-bottom: 3px dotted rgb(228,55,2);*/
+    font-size: 1.5rem;
+}
 p{
     font-weight: 300;
     color: rgb(33, 47, 61);
@@ -385,4 +402,67 @@ background: #FFF;
 }
 .div-sec2{
     background-color: #ffdab945;
+}
+#contador{
+    background-color: aquamarine;
+}
+#cuenta{
+    margin-top: 30px;
+   display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.simply-section{
+    background: #fff;
+    width: 180px;
+    height: 180px;
+    margin: 0px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.simply-amount{
+    display: block;
+    font-size: 50px;
+    font-weight: 700;
+    text-align-last: center;
+}
+.simply-word{
+    font-weight: 300;
+    font-size: 30px;
+    color: gray;
+}
+.mb-3{
+    margin-bottom: 3px;
+}
+.img-size{
+    width: 100%;
+}
+.componentes{
+    background-color: beige;
+}
+.border-b-morado{
+    border-bottom: 1px solid darkmagenta !important;
+}
+.mt-3{
+    margin-top: 3px;
+}
+.m-2{
+ margin: 2px;   
+}
+.align-self-center {
+    align-self: center;
+}
+.img-buzzer{
+    height: 261px;
+}
+.fix-img{
+    /*height: 260px;*/
+    margin-bottom: 10px;
+    border: 0.5px solid gray;
+    
+}
+border-gray{
+    border: 0.5px solid gray;
 }
